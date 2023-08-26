@@ -8,11 +8,18 @@ from clarifai_grpc.grpc.api import resources_pb2, service_pb2, service_pb2_grpc
 from clarifai_grpc.grpc.api.status import status_code_pb2
 import streamlit as st
 # Your PAT (Personal Access Token) can be found in the portal under Authentification
+# PAT = "44d06f27394d448081f8bf05b8ca50d2"
+# USER_ID = "shahxeebhassan"
+# APP_ID = "Llamma2_Tutorial"
+
 PAT = st.secrets.PAT
 # Specify the correct user_id/app_id pairings
 # Since you're making inferences outside your app's scope
+# USER_ID = "shahxeebhassan"
 USER_ID = st.secrets.USER_ID
 APP_ID = st.secrets.APP_ID
+
+APP_ID = "Llamma2_Tutorial"
 # Change these to whatever model and text URL you want to use
 WORKFLOW_ID = 'workflow-b48e88'
 
